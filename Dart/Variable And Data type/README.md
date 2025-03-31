@@ -2,8 +2,12 @@
 
 ## <i>Index</i> of Variable       
   |---  [int, double, num](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num)<br>
-  |--- [String](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/String#dart-string-methods-and-properties-with-examples)
-  
+  |--- [String](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/String#dart-string-methods-and-properties-with-examples)<br>
+  |---[Booleans]()<br>
+  |---[Records ]()<br>
+  |---[]()<br>
+  |---[]()<br>
+  |---[]()<br>
 
 
 # Variable
