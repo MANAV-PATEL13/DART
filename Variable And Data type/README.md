@@ -1,8 +1,8 @@
 # <b> Data type </b>
 
 ## <i>Index</i> of Variable       
-  |---  [int](https://github.com/MANAV-PATEL13/DART-NOTE/tree/main/Variable%20And%20Data%20type/Variable/Int#int)<br>
-  |---  [double](https://github.com/MANAV-PATEL13/DART-NOTE/blob/main/Variable%20And%20Data%20type/Variable/Double/README.md#double)
+  |---  [int, double, num](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num)<br>
+  
 
 
 # Variable
