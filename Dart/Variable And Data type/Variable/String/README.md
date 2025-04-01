@@ -1,4 +1,80 @@
-### Dart `String` Methods and Properties with Examples
+## Ways to Write Strings in Dart</h1>
+
+Dart offers several ways to create strings:
+
+### <b>• <u>Single-Quoted Strings:</u></b>
+Use single quotes for simple strings.
+
+```dart
+void main() {
+String s1 = 'Hello';
+print(s1); // Output: Hello
+}
+```
+
+### <b>• <u>Double-Quoted Strings:</u></b>
+Use double quotes, which work the same as single quotes.
+
+```dart
+void main() {
+String s2 = "World";
+print(s2); // Output: World
+}
+```
+
+### <b>• <u>Automatic String Literal Concatenation:</u></b>
+Dart automatically concatenates adjacent string literals. For example, the following code:
+
+```dart
+void main() {
+String s3 = 'm' 'a' 'n';
+print(s3); // Output: man
+}
+```
+Here, Dart concatenates 'm', 'a', and 'n' into the single string "man".
+
+### <b>• <u>Multi-line Strings with Triple Quotes:</u></b>
+Triple quotes allow you to write strings that span multiple lines.
+
+```dart
+void main() {
+  String multiLine = '''This is a multi-line
+string that spans across
+multiple lines.''';
+
+  print(multiLine);
+}
+```
+
+### <b>• <u>Raw Strings:</u></b>
+### witout raw string 
+```dart 
+void main() {
+  String rawStr = "Hello \n World";
+  print(rawStr);
+  /*
+  Hello
+   World
+  */
+}
+```
+### with raw string<br>
+Prefix with an `r` to create a raw string where escape sequences are not processed.
+
+Raw strings are used to create strings that contain backslashes without escaping them.
+
+```dart
+void main() {
+String rawStr = r"Hello \n World";
+print(rawStr); // Output: Hello \n World
+}
+```
+---
+
+
+
+
+## Dart `String` Methods and Properties with Examples
 
 | #  | Method/Property | Description | Example |
 |----|----------------|-------------|---------|

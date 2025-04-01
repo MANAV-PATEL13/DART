@@ -1,5 +1,3 @@
-Sure! Here's a complete breakdown of `List<T>` in Dart, explaining all its key features and methods in an easy-to-understand way, and I’ll keep it focused only on the **`List<T>`** class, without including additional methods.
-
 ### **Dart `List<T>` – Detailed Notes**
 
 ---
@@ -138,9 +136,91 @@ void main() {
 }
 ```
 
+**Dart Notes: Printing List Elements Using Loops**
 ---
 
-### **Conclusion**
+**1. For-in Loop**
+```dart
+void main(){
+List<String> items = ['Apple', 'Banana', 'Cherry'];
+
+for (var item in items) {
+  print(item);
+}
+}
+```
+- Simplified loop.
+- Best for directly accessing elements without using the index.
+
+---
+
+**2. forEach Method**
+```dart
+void main(){
+items.forEach((item) {
+  print(item);
+});
+}
+```
+- Uses a function to apply an operation to each item.
+- Clean and concise.
+
+---
+
+**3. Traditional For Loop**
+```dart
+void main(){
+for (int i = 0; i < items.length; i++) {
+  print(items[i]);
+}
+}
+```
+- Gives access to the index.
+- Useful when you need both index and value.
+
+---
+
+**4. While Loop**
+```dart
+void main(){
+int j = 0;
+while (j < items.length) {
+  print(items[j]);
+  j++;
+}
+}
+```
+- Useful for cases when loop continuation depends on conditions.
+
+---
+
+**5. Do-While Loop**
+```dart
+void main(){
+int k = 0;
+do {
+  print(items[k]);
+  k++;
+} while (k < items.length);
+}
+```
+- Similar to while loop but guarantees the loop runs at least once.
+
+---
+
+**Summary Table**
+| Loop Type         | Index Access | Clean Syntax | Condition Controlled |
+|-------------------|--------------|--------------|----------------------|
+| For-in Loop       | No           | Yes          | No                   |
+| forEach           | No           | Yes          | No                   |
+| Traditional For   | Yes          | Medium       | Yes                  |
+| While Loop        | Yes          | Medium       | Yes                  |
+| Do-While Loop     | Yes          | Medium       | Yes (at least once)  |
+
+
+---
+
+# List``<T>`` Methods
 
 - `List<T>` is one of the most commonly used collections in Dart.
 - It allows you to create, modify, and manipulate ordered data in a very flexible way.

@@ -57,3 +57,10 @@ void main() {
 1. Install Dart from [dart.dev](https://dart.dev/get-dart).
 2. Use DartPad ([dartpad.dev](https://dartpad.dev)) to run Dart code online.
 3. Learn Dart and build Flutter apps!
+
+<p align="center">
+ 
+  <a href="https://github.com/MANAV-PATEL13/DART/blob/main/READme.md">🏠 Home</a>
+  |
+  <a href="https://github.com/MANAV-PATEL13/DART/blob/main/Dart/Variable%20And%20Data%20type/README.md" style="float: right;">Next ➡️</a>
+</p>

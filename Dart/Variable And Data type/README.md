@@ -1,12 +1,14 @@
 # <b> Data type </b>
 
 ## <i>Index</i> of Variable       
-  |---  [int, double, num](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num)<br>
-  |--- [String](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/String#dart-string-methods-and-properties-with-examples)<br>
-  |---[Booleans]()<br>
-  |---[Records ]()<br>
-  |---[]()<br>
-  |---[]()<br>
+  |---  [int, double, num](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#index-)<br>
+  |--- [String](https://github.com/MANAV-PATEL13/DART/blob/main/Dart/Variable%20And%20Data%20type/Variable/String/README.md)<br>
+  |---[Booleans](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/bool)<br>
+  |---[Records ](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Records)<br>
+  |---[List](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/List)<br>
+  |---[Runes](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Runes)<br>
+  |---[Sets](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Sets)<br>
+  |---[Symbols](https://github.com/MANAV-PATEL13/DART/blob/main/Dart/Variable%20And%20Data%20type/Variable/Symbols/readme.md)<br>
   |---[]()<br>
 
 
@@ -44,6 +46,12 @@ print('Hello, World!'); → Outputs text to the console.
 Semicolons (;) are required at the end of statements.
 
 ---
-
+<p align="center">
+  <a href="https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Intro#introduction-to-dart-for-beginners" style="float: left;">⬅️ Intro</a>
+  |
+ <a href="https://github.com/MANAV-PATEL13/DART/blob/main/READme.md">🏠 Home</a>
+  |
+  <a href="https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#index-" style="float: right;">Next ➡️</a>
+</p>
 
 
