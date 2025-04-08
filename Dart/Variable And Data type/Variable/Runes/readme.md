@@ -2,6 +2,43 @@ In Dart, the `Runes` class is used to work with Unicode characters in strings. I
 
 ### **Runes Methods with Examples**
 Here’s a detailed explanation of all `Runes` methods, along with examples and outputs.
+| **No.** | **Method**           | **Description**                                                     | **Example**                               | **Output**                           |
+|---------|----------------------|---------------------------------------------------------------------|-------------------------------------------|--------------------------------------|
+| 1       | `iterator`           | Returns an iterator for iterating over the runes collection.         | `Runes('👋😊').iterator`                   | Iterator for '👋😊'                   |
+| 2       | `last`                | Returns the last rune in the collection.                            | `Runes('Hello').last`                     | 111 (Unicode for 'o')                |
+| 3       | `string`              | Converts runes back to a string.                                    | `String.fromCharCodes(Runes('😊'))`       | '😊'                                  |
+| 4       | `first`               | Returns the first rune in the collection.                           | `Runes('Hello').first`                    | 72 (Unicode for 'H')                 |
+| 5       | `isEmpty`             | Checks if the runes collection is empty.                            | `Runes('').isEmpty`                       | true                                 |
+| 6       | `isNotEmpty`          | Returns true if the collection is not empty.                        | `Runes('Hello').isNotEmpty`               | true                                 |
+| 7       | `length`              | Returns the number of runes.                                        | `Runes('👋😊').length`                     | 2                                    |
+| 8       | `single`              | Returns the only element if there is exactly one element.           | `Runes('A').single`                       | 65 (Unicode for 'A')                 |
+| 9       | `hashCode`            | Returns the hash code of the collection.                            | `Runes('Hello').hashCode`                 | A hash code value                    |
+| 10      | `runtimeType`         | Returns the runtime type of the object.                             | `Runes('Hello').runtimeType`              | Runes                               |
+| 11      | `firstOrNull`         | Returns the first element or null if empty.                         | `Runes('').firstOrNull`                   | null                                 |
+| 12      | `indexed`             | Returns an iterable of pairs (index, rune).                         | `Runes('Hi').indexed.toList()`            | [(0, 72), (1, 105)]                  |
+| 13      | `lastOrNull`          | Returns the last element or null if empty.                          | `Runes('').lastOrNull`                    | null                                 |
+| 14      | `nonNulls`            | Returns an iterable that removes nulls.                              | `List<int?>[72, null, 101].nonNulls`      | [72, 101]                            |
+| 15      | `singleOrNull`        | Returns the single element or null if empty or more than one.       | `Runes('A').singleOrNull`                 | 65 (Unicode for 'A')                 |
+| 16      | `any()`               | Checks if any element satisfies the condition.                      | `Runes('Hello').any((rune) => rune == 101)` | true                               |
+| 17      | `cast()`              | Casts elements to another type.                                     | `Runes('Hello').cast<int>().toList()`     | [72, 101, 108, 108, 111]             |
+| 18      | `contains()`          | Checks if the collection contains a specific rune.                  | `Runes('Hello').contains(101)`            | true                                 |
+| 19      | `elementAt()`         | Gets the rune at a specific index.                                  | `Runes('Hello').elementAt(1)`             | 101 (Unicode for 'e')                |
+| 20      | `elementAtOrNull()`   | Gets the rune at a specific index or null if out of bounds.         | `Runes('Hi').elementAtOrNull(3)`          | null                                 |
+| 21      | `every()`             | Checks if every element satisfies the condition.                    | `Runes('Hello').every((rune) => rune > 50)` | true                                |
+| 22      | `expand()`            | Expands each element into multiple values.                          | `Runes('Hi').expand((rune) => [rune, rune + 1]).toList()` | [72, 73, 105, 106]  |
+| 23      | `firstWhere()`        | Finds the first element that matches a condition.                   | `Runes('Hello').firstWhere((rune) => rune > 100)` | 101 (Unicode for 'e')               |
+| 24      | `fold()`              | Accumulates the collection into a single result.                    | `Runes('Hello').fold(0, (prev, rune) => prev + rune)` | 500                                  |
+| 25      | `followedBy()`        | Concatenates the current collection with another.                   | `Runes('Hi').followedBy(Runes(' there')).toList()` | [72, 105, 32, 116, 104, 101, 114, 101] |
+| 26      | `forEach()`           | Applies a function to each element in the collection.               | `Runes('Hello').forEach((rune) => print(rune))` | 72, 101, 108, 108, 111               |
+| 27      | `join()`              | Joins the elements with a separator.                                | `Runes('Hello').join('-')`                | 72-101-108-108-111                   |
+| 28      | `lastWhere()`         | Finds the last element that matches a condition.                    | `Runes('Hello').lastWhere((rune) => rune == 108)` | 108 (Unicode for 'l')               |
+| 29      | `map()`               | Transforms each element into a new form.                            | `Runes('Hello').map((rune) => rune + 1).toList()` | [73, 102, 109, 109, 112]             |
+| 30      | `reduce()`            | Combines all elements into a single result.                         | `Runes('Hello').reduce((prev, rune) => prev + rune)` | 500                                  |
+| 31      | `singleWhere()`       | Finds the single element that matches a condition.                  | `Runes('Hello').singleWhere((rune) => rune == 108)` | 108 (Unicode for 'l')               |
+| 32      | `skip()`              | Skips the first `n` elements.                                       | `Runes('Hello').skip(2).toList()`          | [108, 108, 111]                      |
+| 33      | `skipWhile()`         | Skips elements while a condition is true.                           | `Runes('Hello').skipWhile((rune) => rune != 108).toList()` | [108, 108, 111]  |
+| 34      | `take()`              | Takes the first `n` elements.                                       | `Runes('Hello').take(3).toList()`          | [72, 101, 108]                       |
+
 
 ---
 
@@ -679,41 +716,12 @@ NoSuchMethodError: The method 'nonExistentMethod' was called on null.
 
  Here's a table with numbers as column headers. I'll present an example using some of the methods in `Runes`, showing how each can be used and their results.
 
-| **No.** | **Method**           | **Description**                                                     | **Example**                               | **Output**                           |
-|---------|----------------------|---------------------------------------------------------------------|-------------------------------------------|--------------------------------------|
-| 1       | `iterator`           | Returns an iterator for iterating over the runes collection.         | `Runes('👋😊').iterator`                   | Iterator for '👋😊'                   |
-| 2       | `last`                | Returns the last rune in the collection.                            | `Runes('Hello').last`                     | 111 (Unicode for 'o')                |
-| 3       | `string`              | Converts runes back to a string.                                    | `String.fromCharCodes(Runes('😊'))`       | '😊'                                  |
-| 4       | `first`               | Returns the first rune in the collection.                           | `Runes('Hello').first`                    | 72 (Unicode for 'H')                 |
-| 5       | `isEmpty`             | Checks if the runes collection is empty.                            | `Runes('').isEmpty`                       | true                                 |
-| 6       | `isNotEmpty`          | Returns true if the collection is not empty.                        | `Runes('Hello').isNotEmpty`               | true                                 |
-| 7       | `length`              | Returns the number of runes.                                        | `Runes('👋😊').length`                     | 2                                    |
-| 8       | `single`              | Returns the only element if there is exactly one element.           | `Runes('A').single`                       | 65 (Unicode for 'A')                 |
-| 9       | `hashCode`            | Returns the hash code of the collection.                            | `Runes('Hello').hashCode`                 | A hash code value                    |
-| 10      | `runtimeType`         | Returns the runtime type of the object.                             | `Runes('Hello').runtimeType`              | Runes                               |
-| 11      | `firstOrNull`         | Returns the first element or null if empty.                         | `Runes('').firstOrNull`                   | null                                 |
-| 12      | `indexed`             | Returns an iterable of pairs (index, rune).                         | `Runes('Hi').indexed.toList()`            | [(0, 72), (1, 105)]                  |
-| 13      | `lastOrNull`          | Returns the last element or null if empty.                          | `Runes('').lastOrNull`                    | null                                 |
-| 14      | `nonNulls`            | Returns an iterable that removes nulls.                              | `List<int?>[72, null, 101].nonNulls`      | [72, 101]                            |
-| 15      | `singleOrNull`        | Returns the single element or null if empty or more than one.       | `Runes('A').singleOrNull`                 | 65 (Unicode for 'A')                 |
-| 16      | `any()`               | Checks if any element satisfies the condition.                      | `Runes('Hello').any((rune) => rune == 101)` | true                               |
-| 17      | `cast()`              | Casts elements to another type.                                     | `Runes('Hello').cast<int>().toList()`     | [72, 101, 108, 108, 111]             |
-| 18      | `contains()`          | Checks if the collection contains a specific rune.                  | `Runes('Hello').contains(101)`            | true                                 |
-| 19      | `elementAt()`         | Gets the rune at a specific index.                                  | `Runes('Hello').elementAt(1)`             | 101 (Unicode for 'e')                |
-| 20      | `elementAtOrNull()`   | Gets the rune at a specific index or null if out of bounds.         | `Runes('Hi').elementAtOrNull(3)`          | null                                 |
-| 21      | `every()`             | Checks if every element satisfies the condition.                    | `Runes('Hello').every((rune) => rune > 50)` | true                                |
-| 22      | `expand()`            | Expands each element into multiple values.                          | `Runes('Hi').expand((rune) => [rune, rune + 1]).toList()` | [72, 73, 105, 106]  |
-| 23      | `firstWhere()`        | Finds the first element that matches a condition.                   | `Runes('Hello').firstWhere((rune) => rune > 100)` | 101 (Unicode for 'e')               |
-| 24      | `fold()`              | Accumulates the collection into a single result.                    | `Runes('Hello').fold(0, (prev, rune) => prev + rune)` | 500                                  |
-| 25      | `followedBy()`        | Concatenates the current collection with another.                   | `Runes('Hi').followedBy(Runes(' there')).toList()` | [72, 105, 32, 116, 104, 101, 114, 101] |
-| 26      | `forEach()`           | Applies a function to each element in the collection.               | `Runes('Hello').forEach((rune) => print(rune))` | 72, 101, 108, 108, 111               |
-| 27      | `join()`              | Joins the elements with a separator.                                | `Runes('Hello').join('-')`                | 72-101-108-108-111                   |
-| 28      | `lastWhere()`         | Finds the last element that matches a condition.                    | `Runes('Hello').lastWhere((rune) => rune == 108)` | 108 (Unicode for 'l')               |
-| 29      | `map()`               | Transforms each element into a new form.                            | `Runes('Hello').map((rune) => rune + 1).toList()` | [73, 102, 109, 109, 112]             |
-| 30      | `reduce()`            | Combines all elements into a single result.                         | `Runes('Hello').reduce((prev, rune) => prev + rune)` | 500                                  |
-| 31      | `singleWhere()`       | Finds the single element that matches a condition.                  | `Runes('Hello').singleWhere((rune) => rune == 108)` | 108 (Unicode for 'l')               |
-| 32      | `skip()`              | Skips the first `n` elements.                                       | `Runes('Hello').skip(2).toList()`          | [108, 108, 111]                      |
-| 33      | `skipWhile()`         | Skips elements while a condition is true.                           | `Runes('Hello').skipWhile((rune) => rune != 108).toList()` | [108, 108, 111]  |
-| 34      | `take()`              | Takes the first `n` elements.                                       | `Runes('Hello').take(3).toList()`          | [72, 101, 108]                       |
 
 ---
+<p align="center">
+  <a href="https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Records" style="float: left;">⬅️ Records</a>
+  |
+  <a href="https://github.com/MANAV-PATEL13/DART/blob/main/Dart/Variable%20And%20Data%20type/README.md">🏠 Home</a>
+  |
+  <a href="https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/List" style="float: right;">List ➡️</a>
+</p>

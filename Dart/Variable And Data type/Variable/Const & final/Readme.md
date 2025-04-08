@@ -93,10 +93,10 @@ void main() {
 ```
 
 ---
-
-Let me know if you'd like:
-- A quiz or practice tasks
-- Visual diagram to explain the differences
-- Explanation of `late` vs `final` too
-
-Want to add this into your Dart guide doc as a new section?
+<p align="center">
+  <a href="https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/bool" style="float: left;">⬅️ Booleans</a>
+  |
+  <a href="https://github.com/MANAV-PATEL13/DART/blob/main/Dart/Variable%20And%20Data%20type/README.md">🏠 Home</a>
+  |
+  <a href="https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Late" style="float: right;">  Late ➡️</a>
+</p>`

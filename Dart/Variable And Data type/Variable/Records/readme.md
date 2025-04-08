@@ -188,4 +188,10 @@ void main() {
 
 Records in Dart are a powerful and concise way to group multiple values without needing to create a class. They are especially useful for returning multiple values from functions or organizing related data in a simple manner. With features like named fields, pattern matching, and value comparison, records are a great addition to Dart for simplifying your code!
 
-Let me know if you need any further explanation or examples!
+<p align="center">
+  <a href="https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/wildcard" style="float: left;">⬅️ wildcard</a>
+  |
+  <a href="https://github.com/MANAV-PATEL13/DART/blob/main/Dart/Variable%20And%20Data%20type/README.md">🏠 Home</a>
+  |
+  <a href="https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Runes" style="float: right;">Runs ➡️</a>
+</p>

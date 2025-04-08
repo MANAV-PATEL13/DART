@@ -662,3 +662,11 @@ Hello, World!
 - **`fromEnvironment()`**: Retrieves a string value from an environment variable at compile-time.
 
 Let me know if you need further clarification or examples!
+
+<p align="center">
+  <a href="https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#index-" style="float: left;">⬅️Inat, Double, Num </a>
+  |
+  <a href="https://github.com/MANAV-PATEL13/DART/blob/main/Dart/Variable%20And%20Data%20type/README.md">🏠 Home</a>
+  |
+  <a href="https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/bool" style="float: right;">Boolean ➡️</a>
+</p>

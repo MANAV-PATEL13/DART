@@ -1,29 +1,29 @@
-# <b><i >index </i></b> 
+# <b><i >Int, Double, Num </i></b> 
 
-- [Intro](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#int--double)
-- [Declaring Variables](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#declaring-variables)
+- [Declaring Variables](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#declaring-variables)
+
 - Operators<br>
-       |--[1. Arithmetic Operators](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#1-arithmetic-operators)<br>
-       |--[2. Relational Operators](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#2-relational-operators)<br>
-       |--[3. Logical Operators](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#3-logical-operators)<br>
-       |--[4. Bitwise and Shift Operators](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#4-bitwise-and-shift-operators)<br>
-       |--[5. Assignment Operators](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#5-assignment-operators)<br>
-       |--[6. Conditional Operator (? :)](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#6-conditional-operator--)<br>
-       |--[7. Cascade Notation (.. and ?..)](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#7-cascade-notation--and-)<br>
-       |--[Summary Table of Operators](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#8-summary-table-of-operators)<br>
+       |--[1. Arithmetic Operators](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#1-arithmetic-operators)<br>
+       |--[2. Relational Operators](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#2-relational-operators)<br>
+       |--[3. Logical Operators](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#3-logical-operators)<br>
+       |--[4. Bitwise and Shift Operators](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#4-bitwise-and-shift-operators)<br>
+       |--[5. Assignment Operators](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#5-assignment-operators)<br>
+       |--[6. Conditional Operator (? :)](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#6-conditional-operator--)<br>
+       |--[7. Cascade Notation (.. and ?..)](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#7-cascade-notation--and-)<br>
+       |--[Summary Table of Operators](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#8-summary-table-of-operators)<br>
        
 - Int - Methods and Properties<br>
-    |-- [Method](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#int-method-and-properties)<br>
-    \ [Class Constructors](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#dart-int-class-constructors-and-methods)<br>
+    |-- [Method](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#double-class-in-dart---methods-and-properties-with-examples)<br>
+    \ [Class Constructors](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#dart-int-class-constructors-and-methods)<br>
 
 
 - Double - Methods and Properties<br> 
-    |--[Method](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#double-class-in-dart---methods-and-properties-with-examples)<br>
-    \ [Class Constructors](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#double-class-in-dart---detailed-explanation-with-examples)
+    |--[Method](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#double-class-in-dart---methods-and-properties-with-examples)<br>
+    \ [Class Constructors](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#double-class-in-dart---detailed-explanation-with-examples)
 
 - Num - Methods and Properties<br> 
-   |-- [Methods](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#dart-num-class---methods-with-examples)<br>
-    \ [Class Constructors](https://github.com/MANAV-PATEL13/DART/tree/main/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#num-class-in-dart)
+   |-- [Methods](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#dart-num-class---methods-with-examples)<br>
+    \ [Class Constructors](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/Int%2C%20Double%2C%20Num#num-class-in-dart)
 
 # int & double
 ##  **`int` Class**
@@ -1619,11 +1619,11 @@ Would you like more examples or explanations? 🚀
 
 ---
 <p align="center">
-  <a href="https://github.com/MANAV-PATEL13/DART-NOTE/blob/main/Variable%20And%20Data%20type/README.md#-data-type-" style="float: left;">⬅️ Previous</a>
+  <a href="https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type#-data-type-" style="float: left;">⬅️ INDEX</a>
   |
-  <a href="https://github.com/MANAV-PATEL13/DART-NOTE/blob/main/Variable%20And%20Data%20type/README.md#-data-type-">🏠 Home</a>
+  <a href="https://github.com/MANAV-PATEL13/DART/blob/main/Dart/Variable%20And%20Data%20type/README.md#-data-type-">🏠 Home</a>
   |
-  <a href="https://github.com/MANAV-PATEL13/DART-NOTE/tree/main/Variable%20And%20Data%20type/Variable/Double#double" style="float: right;">Next ➡️</a>
+  <a href="https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type/Variable/String" style="float: right;">String ➡️</a>
 </p>
 
 
