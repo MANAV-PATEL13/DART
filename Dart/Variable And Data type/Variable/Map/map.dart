@@ -1,11 +1,17 @@
 void main() {
-  var original = {'apple': 1, 'banana': 2};
-  var copy = Map<String, int>.of(original);
-  print(copy);
-  original.addAll({'banana': 3, 'grahps': 4});
-  print(original);
-  print(copy);
+ 
 }
+
+
+// void main() {
+//   var original = {'apple': 1, 'banana': 2};
+//   var copy = Map<int, int>.of(original);//not working , Map<int, int> is not a type of Map 
+// // var copy = Map<String, int>.of(original);   
+//   print(copy);
+//   original.addAll({'banana': 3, 'grahps': 4});
+//   print(original);
+//   print(copy);
+// }
 
 // void main() {
 //   Map<String, int> name = Map();

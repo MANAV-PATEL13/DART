@@ -101,7 +101,7 @@ Sure! Here's an improved table with better examples to clearly show the differen
 
 ---
 
-### 🔹 `Map.of()` – **Same type copy**
+#### 🔹 `Map.of()` – **Same type copy**
 - It **copies a map**, but **only if the types match exactly**.
 
 #### ✅ Example:
@@ -119,7 +119,7 @@ Map<String, int> copy = Map.of(original); // ❌ Error!
 ```
 ❌ It gives a **runtime error** because the types don’t match exactly.
 
----
+
 
 ### 🔹 `Map.from()` – **Allows type conversion**
 - It copies a map even if the types are **not exactly the same**.
@@ -138,7 +138,7 @@ print(copy); // Output: {a: 1, b: 2}
 
 
 
-#### 5. **Using the `Map.fromIterables()` Constructor:**
+### 5. **Using the `Map.fromIterables()` Constructor:**
    This constructor creates a `Map` by associating the elements of two `Iterable` collections as keys and values, respectively.
 
   ```dart
