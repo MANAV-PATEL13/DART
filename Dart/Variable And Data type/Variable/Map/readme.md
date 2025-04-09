@@ -73,7 +73,7 @@ void main() {
 ```dart
 void main() {
   var original = {'apple': 1, 'banana': 2};
-  var copy = Map<String, int>.from(original);
+  var copy = Map<String, int>.of(original);
   print(copy);
 }
 ```
@@ -82,6 +82,60 @@ void main() {
 {apple: 1, banana: 2}
 ```
    This also results in a separate copy of the original `Map`.
+
+---
+Sure! Here's an improved table with better examples to clearly show the difference between `Map.of()` and `Map.from()` in Dart:
+
+### ✅ Difference Between `Map.of()` and `Map.from()` in Dart
+
+| Feature         | `Map.of()` – **Strict Type Copy**                  | `Map.from()` – **Flexible Type Conversion**            |
+|----------------|-----------------------------------------------------|---------------------------------------------------------|
+| ✅ Purpose      | Copies map **with exact same types**                | Copies map **even with different types** (tries to cast) |
+| ✅ Type Safety  | Very strict (types must match exactly)              | Tries to convert types (can fail at runtime)            |
+| ✅ Works With   | `Map<String, int>` → `Map<String, int>`             | `Map<dynamic, dynamic>` → `Map<String, int>`            |
+| ✅ Example      | ```dart<br>Map<String, int> a = {'x': 1};<br>Map<String, int> b = Map.of(a);<br>``` | ```dart<br>Map<dynamic, dynamic> a = {'x': 1};<br>Map<String, int> b = Map.from(a);<br>``` |
+| ❌ Fails With   | ```dart<br>Map<dynamic, dynamic> a = {'x': 1};<br>Map<String, int> b = Map.of(a); // Error!<br>``` | ```dart<br>Map<dynamic, dynamic> a = {'x': 'oops'};<br>Map<String, int> b = Map.from(a); // Error!<br>``` |
+| ✅ When to Use  | When you're sure the types **already match**        | When copying from **dynamic or unknown typed maps**     |
+
+-  **difference between `.of` and `.from` in Dart Maps** in a simple way with examples:
+
+---
+
+### 🔹 `Map.of()` – **Same type copy**
+- It **copies a map**, but **only if the types match exactly**.
+
+#### ✅ Example:
+```dart
+Map<String, int> original = {'a': 1, 'b': 2};
+Map<String, int> copy = Map.of(original);
+print(copy); // Output: {a: 1, b: 2}
+```
+✅ Works perfectly because types match: `String` keys and `int` values.
+
+#### ❌ Example (won't work):
+```dart
+Map<dynamic, dynamic> original = {'a': 1, 'b': 2};
+Map<String, int> copy = Map.of(original); // ❌ Error!
+```
+❌ It gives a **runtime error** because the types don’t match exactly.
+
+---
+
+### 🔹 `Map.from()` – **Allows type conversion**
+- It copies a map even if the types are **not exactly the same**.
+- It tries to **convert types** at runtime.
+
+#### ✅ Example:
+```dart
+Map<dynamic, dynamic> original = {'a': 1, 'b': 2};
+Map<String, int> copy = Map.from(original);
+print(copy); // Output: {a: 1, b: 2}
+```
+✅ Works if it can safely convert types to `String` and `int`.
+
+---
+
+
 
 
 #### 5. **Using the `Map.fromIterables()` Constructor:**
