@@ -4,7 +4,7 @@
 
 | No. | Keyword   | Category / Purpose           | Example                                           | Explanation |
 |-----|-----------|------------------------------|---------------------------------------------------|-------------|
-| 1   | `abstract`| OOP (Classes & Interfaces)   | abstract class Shape { void draw(); }           | Defines an abstract class that cannot be instantiated. Used as a base class. |
+| 1   | [`abstract`](https://github.com/MANAV-PATEL13/DART/blob/main/Dart/Keywords/readme.md#-dart-abstract)| OOP (Classes & Interfaces)   | abstract class Shape { void draw(); }           | Defines an abstract class that cannot be instantiated. Used as a base class. |
 | 2   | `as`      | Typecasting / Aliasing       | var str = '123' as String;                      | Used for type casting or import aliasing (`import 'x.dart' as x`). |
 | 3   | `assert`  | Debug / Error checking        | assert(age > 0);`                                | Ensures a condition is true during development; throws error if false. |
 | 4   | `async`   | Asynchronous programming      | Future<void> fetch() async {}`                   | Marks a function as asynchronous. |
@@ -15,7 +15,7 @@
 | 9   | `catch`   | Error handling                | catch (e) { print(e); }`                         | Handles exceptions in try blocks. |
 | 10  | `class`   | OOP (Class definition)        | class Car {}`                                    | Declares a new class.
 
-<br><br><br>
+<br><br><br><br><br><br>
 # 🚀 Dart `abstract` 
 
 ## 1. What is an Abstract Class?
@@ -515,7 +515,7 @@ Let me know if you’d like this in a printable format or added to a study sheet
 
 **A:** In a payment processing system, you can define an abstract class `PaymentMethod` with a method `pay()`. Subclasses like `CreditCard`, `DebitCard`, and `PayPal` implement the `pay()` method differently, allowing for flexible and extensible payment processing.
 
-<br><br><br>
+<br><br><br><br><br><br>
 
 
 ---
@@ -834,11 +834,213 @@ Barking...
 
 ---
 
-Would you like to go through additional examples or discuss real-world use cases where casting might be applied in Dart programs?
 
 
-<br><br><br>
+<br><br><br><br><br><br>
 
+# 🛡️🔍 Assert
+
+---
+
+## 🔷 1. What is `assert` in Dart? (Definition)
+
+In Dart, `*assert*` is a **debug-time statement** used to test whether a condition is true. If the condition is false, it throws an `AssertionError` and halts the program (in debug mode only).
+
+> ✅ It’s mainly used for **development and debugging**, not in production.
+
+> 📌 It helps in **debugging and validating logic** during development.
+
+---
+
+## 🔷 2. Why use `assert`?
+
+You use `assert` to:
+- Catch logical errors early during development.
+- Catch programming errors early.
+- Validate assumptions (e.g., inputs, states, conditions).
+- Prevent misuse of methods or incorrect data.
+- Ensure that variables hold valid values.
+- Prevent invalid input from being processed.
+- Enforce correct assumptions during code execution.
+
+🔎 It acts like a "checkpoint" to validate logic during development.
+
+> ⚠️ Assertions are **disabled in production** mode, so don’t rely on them for critical application logic.
+
+---
+
+## 🔷 3. How to use `assert`?
+
+### 🔸 Syntax:
+
+```dart
+assert(condition);
+assert(condition, "Custom error message");
+```
+
+- `condition` is a boolean expression.
+- `"Custom error message"` is optional.
+
+### 📌 Example:
+
+```dart
+int age = 25;
+assert(age >= 18, "Age must be 18 or above");
+```
+
+---
+
+## 🔷 4. How does `assert` work?
+
+1. Dart checks the condition inside `assert()`.
+2. If it's `true`, the program continues.
+3. If it's `false`, it throws an `AssertionError`.
+4. The error **only appears in debug mode**. In release mode, Dart skips all assert statements.
+
+> ❌ In production (release) mode: Dart **ignores all assert statements**.
+
+---
+
+## 🔷 5. Example with output + short explanation
+
+### 📌 Code:
+```dart
+void main() {
+  int age = 17;
+  assert(age >= 18, "Age must be at least 18");
+  print("Access granted");
+}
+```
+
+### ▶️ Output (debug mode):
+```
+Unhandled exception:
+Assertion failed: "Age must be at least 18"
+```
+
+### 🧠 Explanation:
+- Checks if `age >= 18`.
+- Since age is `17`, the assertion fails and throws an error.
+- `print("Access granted");` is **not executed**.
+
+---
+
+## 🔷 6. Real-world example with output + short explanation
+
+### 🔸 Example: Validating constructor input Code:
+```dart
+class BankAccount {
+  double balance;
+
+  BankAccount(this.balance) {
+    assert(balance >= 0, "Initial balance must be non-negative");
+  }
+  //also define like this 
+  //assert(balance >= 0, "Initial balance must be non-negative");
+
+  void withdraw(double amount) {
+    assert(amount <= balance, "Insufficient funds");
+    balance -= amount;
+    print("Withdrawn: \$${amount}");
+  }
+}
+
+void main() {
+  var account = BankAccount(500);
+  account.withdraw(100);   // ✅
+  account.withdraw(600);   // ❌ Assertion fails
+}
+```
+
+### ▶️ Output (debug mode):
+```
+Withdrawn: $100
+Unhandled exception:
+Assertion failed: "Insufficient funds"
+```
+
+### 🧠 Explanation:
+- First withdrawal is okay.
+- Second withdrawal tries to take out more than balance ⇒ assertion fails.
+
+---
+
+## 🔷 7. Rules of using `assert`
+
+| Rule | Explanation |
+|------|-------------|
+| ✅ Only use in debug mode | Use for development-time checks. |
+| ✅ Should not affect program logic | Assertions are **removed** in production. |
+| ✅ Use for developer errors | Like invalid input or illegal method usage. |
+| ❌ Don’t use for user-facing validation | Use exceptions or error handling instead. |
+| ✅ Use with custom messages | Helps identify what went wrong. |
+
+1. Only use for **debug-time checks**, not for user-facing error handling.
+2. Avoid using `assert` in production logic.
+3. Can be disabled in release mode (they’re skipped).
+4. Only works if conditions are boolean expressions.
+5. Can include a custom error message for clarity.
+
+---
+
+## 📘 8. Q&A (Knowledge + Real-world Practical Use)
+
+###  **Q1: What type of error does `assert` throw?**  
+**A:** `AssertionError`.
+
+###  **Q2:** What happens if an assertion fails?
+**A:** Dart throws an `AssertionError` and stops further execution (in debug mode).
+
+---
+
+###  **Q3: Will `assert` run in production?**  
+**A:** No. It is ignored in production mode.
+       Technically yes, but it's **ignored** in production builds. So **don't use it for critical logic.**
+
+---
+
+###  **Q4: Can `assert` be used in constructors?**  
+**A:** Yes. Example:
+```dart
+Person(String name) : assert(name.isNotEmpty);
+```
+
+---
+
+###  **Q5: Should I validate user input using `assert`?**  
+**A:** ❌ No. Use `if` statements or exceptions for user input.
+
+---
+
+###  **Q6: How to enable assert in Dart CLI?**  
+**A:** Use:
+```bash
+dart --enable-asserts your_program.dart
+```
+
+---
+
+###  **Q7: Real-world case — When do developers often use `assert`?**  
+**A:** In:
+- Class constructors to validate object state.
+- Internal method checks (e.g., balance check).
+- Testing APIs or debug assumptions in logic.
+- Constructors to validate input
+- Ensuring API responses have valid data
+- Debugging complex functions
+- Validating test cases
+
+---
+
+###  **Q8:** What's the difference between `if` and `assert`?
+| Feature | `if` | `assert` |
+|--------|------|----------|
+| Runs in production? | ✅ Yes | ❌ No |
+| Used for error handling? | ✅ Yes | 🚫 Debugging only |
+| Throws error automatically? | ❌ No | ✅ Yes (on false) |
+
+---
+<br><br><br><br><br><br>
 
 
 # 🏹 Switch
