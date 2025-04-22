@@ -121,3 +121,12 @@ void main() {
 | Are comments executed? | ❌ No, they are ignored at compile and runtime |
 
 ---
+<br>
+<br>
+<p align="center">
+  <a href="https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Variable%20And%20Data%20type#-data-type-" style="float: left;">⬅️ Variable</a>
+  |
+  <a href="https://github.com/MANAV-PATEL13/DART/blob/main/Dart/Variable%20And%20Data%20type/README.md">🏠 Home</a>
+  |
+  <a href="https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Metadata#-metadata" style="float: right;">  Metadata ➡️</a>
+</p>
