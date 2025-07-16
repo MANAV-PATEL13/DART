@@ -6,3 +6,4 @@
 ### 4. [Metadata](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Metadata#-metadata)
 ### 5. [Libraries_&_imports](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/Libraries%20%26%20imports#1-what-are-libraries--imports)
 ### 6. [Keywords](https://github.com/MANAV-PATEL13/DART/blob/main/Dart/Keywords/readme.md#dart-keywords-summary-table)
+### 7. [Loop](https://github.com/MANAV-PATEL13/DART/tree/main/Dart/loop#1-for-loop)
